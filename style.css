@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f3640;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  #clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 10px solid #f5f6fa;
+    border-radius: 50%;
+    background: #7f8fa6;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .digital-clock {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #61dafb;
+    text-align: center;
+  }
+
+  .number {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2f3640;
+    transform: translate(-50%, -50%);
+  }
+  
+  .number1 { top: 15%; left: 80%; }
+  .number2 { top: 30%; left: 90%; }
+  .number3 { top: 50%; left: 97%; }
+  .number4 { top: 70%; left: 92%; }
+  .number5 { top: 85%; left: 80%; }
+  .number6 { top: 95%; left: 50%; }
+  .number7 { top: 87%; left: 20%; }
+  .number8 { top: 70%; left: 8%; }
+  .number9 { top: 50%; left: 3%; }
+  .number10 { top: 30%; left: 9%; }
+  .number11 { top: 15%; left: 20%; }
+  .number12 { top: 5%; left: 50%; }
+  
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    background: #f5f6fa;
+    border-radius: 5px;
+    transform: translateX(-50%) rotate(0deg);
+    transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.3, 1);
+  }
+  
+  #hour {
+    width: 6px;
+    height: 80px;
+    background: #dcdde1;
+  }
+  
+  #minute {
+    width: 4px;
+    height: 120px;
+    background: #4cd137;
+  }
+  
+  #second {
+    width: 2px;
+    height: 140px;
+    background: #e84118;
+  }
+  
+  #center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: #2f3640;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
